@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:free_banking/screens/bottomnavbar/bottomnavbar_screen.dart';
 
 class BankingApp extends StatelessWidget {
   const BankingApp({super.key});
@@ -9,6 +10,7 @@ class BankingApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       // home:  اول اسكرين ,
+      home: BottomNavBarScreen(),
     );
   }
 }

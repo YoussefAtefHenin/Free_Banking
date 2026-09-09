@@ -15,6 +15,7 @@ class ButtonWedgit extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(30),
         child: Container(
+          width: double.infinity,
           decoration: BoxDecoration(
             color: Color(0xff0066FF),
             borderRadius: BorderRadius.circular(20),

@@ -45,8 +45,19 @@ class _SignInScreenState extends State<SignInScreen> {
       );
     }
   },
-  child: const Icon(Icons.arrow_back_ios_new_rounded),
+  child:Container(
+                  width: 42,
+                  height: 42,
+                  decoration: BoxDecoration(
+                 
+                    color: Color(0xffF4F4F4),
+                    borderRadius: BorderRadius.circular(50),
+                    
+
+                  ),
+                  child:  const Icon(Icons.arrow_back_ios_new_rounded),
 ),
+              ),
                 SizedBox(height: 53),
                 Expanded(
                   child: Form(

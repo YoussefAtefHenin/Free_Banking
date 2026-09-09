@@ -65,16 +65,6 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-
-flutter_native_splash:
-  color: "#ffffff"
-  image: assets\images\logo.png
-  fullscreen: true
-
-  android_12:
-    color: "#ffffff"
-    image: assets\images\logo.png
-    icon_background_color: "#ffffff"  
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

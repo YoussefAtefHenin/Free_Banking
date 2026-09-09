@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:free_banking/models/button_model.dart';
 import 'package:free_banking/models/textFileld_model.dart';
 import 'package:free_banking/screens/auth/signup_screen.dart';
+import 'package:free_banking/screens/auth/widget/textField_widget.dart';
 import 'package:free_banking/screens/buttomnavpar/home_screen.dart';
 import 'package:free_banking/screens/onboarding/onboarding_screen.dart';
 
 import 'package:free_banking/screens/onboarding/widget/button_widget.dart';
-import 'package:free_banking/screens/onboarding/widget/textField_widget.dart';
+
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});

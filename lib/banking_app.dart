@@ -8,7 +8,6 @@ class BankingApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: OnboardingScreen(),
-
     );
   }
 }

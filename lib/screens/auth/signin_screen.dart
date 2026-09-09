@@ -3,7 +3,8 @@ import 'package:free_banking/models/button_model.dart';
 import 'package:free_banking/models/textFileld_model.dart';
 import 'package:free_banking/screens/auth/signup_screen.dart';
 import 'package:free_banking/screens/auth/widget/textField_widget.dart';
-import 'package:free_banking/screens/buttomnavpar/home_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/bottomnavbar_screen.dart';
+
 import 'package:free_banking/screens/onboarding/onboarding_screen.dart';
 
 import 'package:free_banking/screens/onboarding/widget/button_widget.dart';
@@ -131,7 +132,7 @@ class _SignInScreenState extends State<SignInScreen> {
                             print(_passwordController.text);
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => HomeScreen()),
+                              MaterialPageRoute(builder: (context) => BottomNavBarScreen()),
                             );
                           }
                         }, button: ButtonModel("Sign In")),

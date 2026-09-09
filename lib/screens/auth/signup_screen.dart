@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:free_banking/models/button_model.dart';
 import 'package:free_banking/models/textFileld_model.dart';
 import 'package:free_banking/screens/auth/signin_screen.dart';
-import 'package:free_banking/screens/buttomnavpar/buttomnavpar_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/bottomnavbar_screen.dart';
+
 
 import 'package:free_banking/screens/onboarding/widget/button_widget.dart';
 import 'package:free_banking/screens/auth/widget/textField_widget.dart';
@@ -170,7 +171,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => ButtomnavparScreen(),
+                              builder: (context) => BottomNavBarScreen(),
                             ),
                           );
                         }

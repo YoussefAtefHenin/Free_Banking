@@ -13,20 +13,21 @@ class ButtonWedgit extends StatelessWidget {
     return InkWell(
       onTap: onPressed,
       child: Padding(
-        padding: const EdgeInsets.all(30),
+        padding: const EdgeInsets.all(10),
         child: Container(
+          height: 56,
           width: double.infinity,
           decoration: BoxDecoration(
             color: Color(0xff0066FF),
             borderRadius: BorderRadius.circular(20),
           ),
-          padding: EdgeInsets.symmetric(vertical: 25),
+          //padding: EdgeInsets.symmetric(vertical: 25),
           child: Center(
             child: Text(
               button.buttonText,
               style: TextStyle(
                 fontSize: 16,
-                fontWeight: FontWeight(600),
+                fontWeight: FontWeight.bold,
                 color: Color(0xffFFF9FF),
               ),
             ),

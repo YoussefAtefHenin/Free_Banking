@@ -9,11 +9,21 @@ class H1TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: 
-          Text(h1.title,style:TextStyle(
-            fontSize: 26,
-            fontWeight: FontWeight.bold,
-          ) ,
+          Column(
+            children: [
+              Text(h1.title,style:TextStyle(
+                fontSize: 26,
+                fontWeight: FontWeight.bold,
+              ) ,
+              ),
+               Text(h1.title2,style:TextStyle(
+                fontSize: 26,
+                fontWeight: FontWeight.bold,
+              ) ,
+              ),
+            ],
           ),
+
 
         
       

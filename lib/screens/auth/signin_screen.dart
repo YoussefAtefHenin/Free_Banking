@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:free_banking/models/button_model.dart';
 import 'package:free_banking/models/textFileld_model.dart';
 import 'package:free_banking/screens/auth/signup_screen.dart';
-import 'package:free_banking/screens/buttomnavpar/home_screen.dart';
+import 'package:free_banking/screens/auth/widget/textField_widget.dart';
+import 'package:free_banking/screens/bottomnavbar/bottomnavbar_screen.dart';
+
 import 'package:free_banking/screens/onboarding/onboarding_screen.dart';
 
 import 'package:free_banking/screens/onboarding/widget/button_widget.dart';
-import 'package:free_banking/screens/onboarding/widget/textField_widget.dart';
+
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -45,8 +47,19 @@ class _SignInScreenState extends State<SignInScreen> {
       );
     }
   },
-  child: const Icon(Icons.arrow_back_ios_new_rounded),
+  child:Container(
+                  width: 42,
+                  height: 42,
+                  decoration: BoxDecoration(
+                 
+                    color: Color(0xffF4F4F4),
+                    borderRadius: BorderRadius.circular(50),
+                    
+
+                  ),
+                  child:  const Icon(Icons.arrow_back_ios_new_rounded),
 ),
+              ),
                 SizedBox(height: 53),
                 Expanded(
                   child: Form(
@@ -119,7 +132,7 @@ class _SignInScreenState extends State<SignInScreen> {
                             print(_passwordController.text);
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => HomeScreen()),
+                              MaterialPageRoute(builder: (context) => BottomNavBarScreen()),
                             );
                           }
                         }, button: ButtonModel("Sign In")),

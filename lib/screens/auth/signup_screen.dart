@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:free_banking/models/button_model.dart';
 import 'package:free_banking/models/textFileld_model.dart';
 import 'package:free_banking/screens/auth/signin_screen.dart';
-import 'package:free_banking/screens/buttomnavpar/home_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/bottomnavbar_screen.dart';
+
+
 import 'package:free_banking/screens/onboarding/widget/button_widget.dart';
-import 'package:free_banking/screens/onboarding/widget/textField_widget.dart';
+import 'package:free_banking/screens/auth/widget/textField_widget.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -43,7 +45,17 @@ class _SignupScreenState extends State<SignupScreen> {
                     );
                   }
                 },
-                child: const Icon(Icons.arrow_back_ios_new_rounded),
+                child: Container(
+                  width: 42,
+                  height: 42,
+                  decoration: BoxDecoration(
+                 
+                    color: Color(0xffF4F4F4),
+                    borderRadius: BorderRadius.circular(50),
+                    
+
+                  ),
+                  child: const Icon(Icons.arrow_back_ios_new_rounded)),
               ),
               const SizedBox(height: 53),
               Expanded(
@@ -61,7 +73,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       ),
                       const SizedBox(height: 38),
                       
-                      // حقل الاسم الكامل
+                      
                       TextfieldWidget(
                         TextfileldModel(
                           label: "Full Name",
@@ -77,7 +89,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         ),
                       ),
                       
-                      // حقل رقم الهاتف
+                      
                       TextfieldWidget(
                         TextfileldModel(
                           label: "Phone Number",
@@ -94,7 +106,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         ),
                       ),
 
-                      // حقل البريد الإلكتروني
+                      
                       TextfieldWidget(
                         TextfileldModel(
                           label: "Email Address",
@@ -117,7 +129,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         ),
                       ),
 
-                      // حقل كلمة المرور
+                      
                       TextfieldWidget(
                         TextfileldModel(
                           label: "Password",
@@ -149,7 +161,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
                       const SizedBox(height: 30),
                       
-                      // زر التسجيل
+                      
                       ButtonWedgit(() {
                         if (_formKey.currentState!.validate()) {
                           print(_nameController.text);
@@ -159,7 +171,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => HomeScreen(),
+                              builder: (context) => BottomNavBarScreen(),
                             ),
                           );
                         }

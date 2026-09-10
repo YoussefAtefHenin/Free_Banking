@@ -173,7 +173,7 @@ class HomeScreen extends StatelessWidget {
                     Text(
                       "Transaction",
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 20,
                         fontWeight: FontWeight.w500,
                         color: Color(0xff1E1E2D),
                       ),

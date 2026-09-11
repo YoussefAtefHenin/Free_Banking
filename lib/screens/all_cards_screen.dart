@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_card.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/second_card.dart';
+import 'package:free_banking/widgets/custom_botton.dart';
 
 class AllCardsScreen extends StatelessWidget {
   const AllCardsScreen({super.key});
@@ -53,16 +54,8 @@ class AllCardsScreen extends StatelessWidget {
                     SizedBox(height: 35),
                     SecondCard(),
 
-                    SizedBox(height: 300),
-                    Text(
-                      "Monthly spending limit",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xff1E1E2D),
-                      ),
-                    ),
-                    SizedBox(height: 19),
+                    SizedBox(height: 160),
+                    CustomButton(text: "Add Card +", onTap: () {}),
                   ],
                 ),
               ),

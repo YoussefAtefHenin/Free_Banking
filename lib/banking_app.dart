@@ -11,7 +11,7 @@ class BankingApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       // home:  اول اسكرين ,
-      home: BottomNavBarScreen(),
+      // home: BottomNavBarScreen(),
       // home: AddNewCardScreen(),
     );
   }

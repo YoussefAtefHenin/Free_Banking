@@ -12,6 +12,10 @@ class BankingApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
+      // home:  اول اسكرين ,
+      // home: BottomNavBarScreen(),
+      // home: AddNewCardScreen(),
+      // home: AllCardsScreen(),
       home: OnboardingScreen(),
     );
   }

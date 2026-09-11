@@ -1,0 +1,80 @@
+import 'package:flutter/material.dart';
+import 'package:free_banking/screens/bottomnavbar/widget/home_card.dart';
+
+class AddNewCardScreen extends StatelessWidget {
+  const AddNewCardScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Stack(
+          children: [
+            SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.only(top: 12, left: 20, right: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        InkWell(
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: Container(
+                            height: 42,
+                            width: 42,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              color: Color(0xffF4F4F4),
+                            ),
+                            child: Image.asset(
+                              "assets/icons/arrow_back_icon.png",
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 85),
+                        Center(
+                          child: Text(
+                            "Add New Card",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                              color: Color(0xff1E1E2D),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 40.9),
+                    HomeCard(),
+                    SizedBox(height: 35),
+
+                    SizedBox(height: 300),
+                    Text(
+                      "Monthly spending limit",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xff1E1E2D),
+                      ),
+                    ),
+                    SizedBox(height: 19),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              right: 0,
+              top: 160,
+              child: Image.asset("assets/images/Ellipse1.png"),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

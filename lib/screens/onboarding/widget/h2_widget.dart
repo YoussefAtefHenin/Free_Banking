@@ -9,9 +9,17 @@ class H2TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return 
           Center(
-            child: Text(h2.subtitle,style:TextStyle(
-              color: Color(0xff7E848D),
-            ) ,
+            child: Column(
+              children: [
+                Text(h2.subtitle,style:TextStyle(
+                  color: Color(0xff7E848D),
+                ) ,
+                ),
+                Text(h2.subtitle2,style:TextStyle(
+                  color: Color(0xff7E848D),
+                  ),
+                  ),
+              ],
             ),
           );
 

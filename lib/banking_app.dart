@@ -14,11 +14,11 @@ class BankingApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: ProfileScreen(),
+
       // home: BottomNavBarScreen(),
       // home: AddNewCardScreen(),
       // home: AllCardsScreen(),
-   //   home: OnboardingScreen(),
+      home: OnboardingScreen(),
       // home: SendMoneyScreen(),
     );
   }

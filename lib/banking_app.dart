@@ -3,6 +3,7 @@ import 'package:free_banking/screens/add_new_card_screen.dart';
 import 'package:free_banking/screens/all_cards_screen.dart';
 import 'package:free_banking/screens/bottomnavbar/bottomnavbar_screen.dart';
 import 'package:free_banking/screens/onboarding/onboarding_screen.dart';
+import 'package:free_banking/screens/profile/profile_screen.dart';
 import 'package:free_banking/screens/send_money_screen.dart';
 
 class BankingApp extends StatelessWidget {
@@ -13,11 +14,13 @@ class BankingApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      // home:  اول اسكرين ,
+      // home: اول اسكرين ,
       // home: BottomNavBarScreen(),
       // home: AddNewCardScreen(),
+      // home: AddNewCardScreen(),
       // home: AllCardsScreen(),
-      home: OnboardingScreen(),
+      // home: OnboardingScreen(),
+      // home: ProfileScreen(),
       // home: SendMoneyScreen(),
     );
   }

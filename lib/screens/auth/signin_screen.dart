@@ -4,9 +4,7 @@ import 'package:free_banking/models/textFileld_model.dart';
 import 'package:free_banking/screens/auth/signup_screen.dart';
 import 'package:free_banking/screens/auth/widget/textField_widget.dart';
 import 'package:free_banking/screens/bottomnavbar/bottomnavbar_screen.dart';
-
 import 'package:free_banking/screens/onboarding/onboarding_screen.dart';
-
 import 'package:free_banking/screens/onboarding/widget/button_widget.dart';
 
 class SignInScreen extends StatefulWidget {

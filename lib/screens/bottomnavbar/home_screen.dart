@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:free_banking/models/home_option_model.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_card.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_options.dart';
+import 'package:free_banking/screens/send_money_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -78,18 +79,28 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Container(
-                          height: 60,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Color(0xffF4F4F4),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => SendMoneyScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            height: 60,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              color: Color(0xffF4F4F4),
+                            ),
+                            child: Image.asset("assets/icons/send_icon.png"),
                           ),
-                          child: Image.asset("assets/icons/send_icon.png"),
                         ),
                         SizedBox(height: 3),
                         Text(
-                          "Sent",
+                          "Send",
                           style: TextStyle(
                             fontSize: 13,
                             fontWeight: FontWeight.w400,

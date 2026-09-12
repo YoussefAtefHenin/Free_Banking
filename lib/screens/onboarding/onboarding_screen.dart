@@ -15,7 +15,6 @@ class OnboardingScreen extends StatefulWidget {
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
-  
   final PageController _pageController = PageController();
   int activeIndex = 0;
 
@@ -24,17 +23,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     OnbordingTextModel(
       image: "assets/images/slider 1.png",
       title: "Fastest Payment in\nthe world",
-      subtitle: "Integrate multiple payment methods\nto help you up the process quickly",
+      subtitle:
+          "Integrate multiple payment methods\nto help you up the process quickly",
     ),
     OnbordingTextModel(
       image: "assets/images/slider 2.png",
       title: "The most Secure\nPlatform for Customer",
-      subtitle: "Built-in Fingerprint, face recognition\nand more, keeping you completely safe",
+      subtitle:
+          "Built-in Fingerprint, face recognition\nand more, keeping you completely safe",
     ),
     OnbordingTextModel(
       image: "assets/images/slider 3.png",
       title: "Paying for Everything is\nEasy and Convenient",
-      subtitle: "Built-in Fingerprint, face recognition\nand more, keeping you completely safe",
+      subtitle:
+          "Built-in Fingerprint, face recognition\nand more, keeping you completely safe",
     ),
   ];
 
@@ -47,7 +49,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           children: [
             const SizedBox(height: 20),
 
-       
             Expanded(
               flex: 3,
               child: PageView.builder(
@@ -55,7 +56,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 itemCount: onboardingData.length,
                 onPageChanged: (index) {
                   setState(() {
-                    activeIndex = index; 
+                    activeIndex = index;
                   });
                 },
                 itemBuilder: (context, index) {
@@ -118,7 +119,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   }
                 },
                 button: ButtonModel(
-                  activeIndex == onboardingData.length - 1 ? "Get Started" : "Next",
+                  activeIndex == onboardingData.length - 1
+                      ? "Get Started"
+                      : "Next",
                 ),
               ),
             ),

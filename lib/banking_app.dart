@@ -16,10 +16,10 @@ class BankingApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      // home: OnboardingScreen(),
+      home: OnboardingScreen(),
       // home: TransactionHistoryScreen(),
       // home: LanguageScreen(),
-      home: BottomNavBarScreen(),
+      // home: BottomNavBarScreen(),
     );
   }
 }

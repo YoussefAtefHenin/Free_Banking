@@ -6,7 +6,7 @@ import 'package:free_banking/screens/profile/profile_widget/profile_info.dart';
 
 import '../../models/customInputField.dart';
 import '../../models/textFileld_model.dart';
-import '../onboarding/widget/textField_widget.dart';
+//import '../onboarding/widget/textField_widget.dart';
 
 class EditProfileScreen extends StatelessWidget {
   const EditProfileScreen({super.key});

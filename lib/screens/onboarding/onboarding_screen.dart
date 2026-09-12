@@ -18,27 +18,35 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final PageController _pageController = PageController();
   int activeIndex = 0;
 
-  // 2. قائمة البيانات (الصور والعناوين والنصوص)
   final List<OnbordingTextModel> onboardingData = [
     OnbordingTextModel(
       image: "assets/images/slider 1.png",
-      title: "Fastest Payment in\nthe world",
-      subtitle:
-          "Integrate multiple payment methods\nto help you up the process quickly",
+      title: "Fastest Payment in",
+      title2: "the world",
+      subtitle: "Integrate multiple payment methods",
+      subtitle2: "to help you up the process quickly",
     ),
     OnbordingTextModel(
       image: "assets/images/slider 2.png",
-      title: "The most Secure\nPlatform for Customer",
-      subtitle:
-          "Built-in Fingerprint, face recognition\nand more, keeping you completely safe",
+      title: "The most Secure",
+      title2: "Platform for Customer",
+      subtitle: "Built-in Fingerprint, face recognition",
+      subtitle2: "and more, keeping you completely safe",
     ),
     OnbordingTextModel(
       image: "assets/images/slider 3.png",
-      title: "Paying for Everything is\nEasy and Convenient",
-      subtitle:
-          "Built-in Fingerprint, face recognition\nand more, keeping you completely safe",
+      title: "Paying for Everything is ",
+      title2: "Easy and Convenient",
+      subtitle: "Built-in Fingerprint, face recognition",
+      subtitle2: "and more, keeping you completely safe",
     ),
   ];
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +81,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
             const SizedBox(height: 20),
 
-            // 4. مؤشر النقاط المتحرك
             AnimatedSmoothIndicator(
               activeIndex: activeIndex,
               count: onboardingData.length,
@@ -88,28 +95,23 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
             const SizedBox(height: 25),
 
-            // 5. العنوان (H1) يتغير ديناميكياً
             H1TextWidget(onboardingData[activeIndex]),
             const SizedBox(height: 10),
 
-            // 6. النص الفرعي (H2) يتغير ديناميكياً
             H2TextWidget(onboardingData[activeIndex]),
 
             const SizedBox(height: 30),
 
-            // 7. زر الـ Next (يحرك الـ PageView عند الضغط عليه)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: ButtonWedgit(
-                () {
+                    () {
                   if (activeIndex < onboardingData.length - 1) {
-                    // الانتقال للصفحة التالية
                     _pageController.nextPage(
                       duration: const Duration(milliseconds: 300),
                       curve: Curves.easeInOut,
                     );
                   } else {
-                    // الانتقال لصفحة تسجيل الدخول في آخر شاشة
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
@@ -125,7 +127,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 20),
           ],
         ),
       ),

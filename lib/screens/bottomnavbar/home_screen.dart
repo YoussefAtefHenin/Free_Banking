@@ -3,6 +3,7 @@ import 'package:free_banking/models/home_option_model.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_card.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_options.dart';
 import 'package:free_banking/screens/send_money_screen.dart';
+import 'package:free_banking/screens/transaction_history_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -190,7 +191,14 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => TransactionHistoryScreen(),
+                          ),
+                        );
+                      },
                       child: Text(
                         "Sell All",
                         style: TextStyle(

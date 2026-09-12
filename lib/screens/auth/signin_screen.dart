@@ -4,9 +4,7 @@ import 'package:free_banking/models/textFileld_model.dart';
 import 'package:free_banking/screens/auth/signup_screen.dart';
 import 'package:free_banking/screens/auth/widget/textField_widget.dart';
 import 'package:free_banking/screens/bottomnavbar/bottomnavbar_screen.dart';
-
 import 'package:free_banking/screens/onboarding/onboarding_screen.dart';
-
 import 'package:free_banking/screens/onboarding/widget/button_widget.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -21,6 +19,14 @@ class _SignInScreenState extends State<SignInScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   bool _obscurePassword = true;
+
+  @override
+  void dispose() {
+    _emailController.dispose();
+    _passwordController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,20 +55,20 @@ class _SignInScreenState extends State<SignInScreen> {
                   width: 42,
                   height: 42,
                   decoration: BoxDecoration(
-                    color: Color(0xffF4F4F4),
+                    color: const Color(0xffF4F4F4),
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: const Icon(Icons.arrow_back_ios_new_rounded),
                 ),
               ),
-              SizedBox(height: 53),
+              const SizedBox(height: 53),
               Expanded(
                 child: Form(
                   key: _formKey,
                   child: ListView(
                     children: [
                       const SizedBox(height: 30),
-                      Text(
+                      const Text(
                         "Sign In",
                         style: TextStyle(
                           fontSize: 28,
@@ -113,36 +119,34 @@ class _SignInScreenState extends State<SignInScreen> {
                           ),
                           validator: (value) {
                             if (value == null || value.length < 6) {
-                              return "Password must br at least 8";
+                              return "Password must be at least 6 characters";
                             }
                             return null;
                           },
                         ),
                       ),
-
                       const SizedBox(height: 30),
-                      ButtonWedgit(() {
-                        if (_formKey.currentState!.validate()) {
-                          print(_emailController.text);
-                          print(_passwordController.text);
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => BottomNavBarScreen(),
-                            ),
-                          );
-                        }
-                      }, button: ButtonModel("Sign In")),
-
+                      ButtonWedgit(
+                            () {
+                          if (_formKey.currentState!.validate()) {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const BottomNavBarScreen(),
+                              ),
+                            );
+                          }
+                        },
+                        button: ButtonModel("Sign In"),
+                      ),
                       const SizedBox(height: 10),
                       Center(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-
                           children: [
                             const Text(
                               "I'm a new user. ",
-                              style: TextStyle(color: Color((0xffA2A2A7))),
+                              style: TextStyle(color: Color(0xffA2A2A7)),
                             ),
                             GestureDetector(
                               onTap: () {

@@ -17,7 +17,7 @@ class BankingApp extends StatelessWidget {
       // home: BottomNavBarScreen(),
       // home: AddNewCardScreen(),
       // home: AllCardsScreen(),
-      // home: OnboardingScreen(),
+      home: OnboardingScreen(),
       // home: SendMoneyScreen(),
     );
   }

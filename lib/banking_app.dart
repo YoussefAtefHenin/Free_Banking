@@ -11,17 +11,9 @@ class BankingApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-
-      // home: اول اسكرين ,
-      // home: BottomNavBarScreen(),
-      // home: AddNewCardScreen(),
-      // home: AddNewCardScreen(),
-      // home: AllCardsScreen(),
-      // home: OnboardingScreen(),
-      // home: ProfileScreen(),
-      // home: SendMoneyScreen(),
+      home: BottomNavBarScreen(),
     );
   }
 }

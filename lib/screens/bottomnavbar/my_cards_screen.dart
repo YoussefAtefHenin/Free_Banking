@@ -4,8 +4,15 @@ import 'package:free_banking/screens/add_new_card_screen.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_card.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_options.dart';
 
-class MyCardsScreen extends StatelessWidget {
-  MyCardsScreen({super.key});
+class MyCardsScreen extends StatefulWidget {
+  const MyCardsScreen({super.key});
+
+  @override
+  State<MyCardsScreen> createState() => _MyCardsScreenState();
+}
+
+class _MyCardsScreenState extends State<MyCardsScreen> {
+  double spendingLimit = 8545;
 
   @override
   Widget build(BuildContext context) {
@@ -26,11 +33,12 @@ class MyCardsScreen extends StatelessWidget {
                         width: 42,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
-                          color: Color(0xffF4F4F4),
+                          color: const Color(0xffF4F4F4),
                         ),
                         child: Image.asset("assets/icons/arrow_back_icon.png"),
                       ),
                     ),
+
                     Expanded(
                       child: Center(
                         child: Text(
@@ -43,6 +51,7 @@ class MyCardsScreen extends StatelessWidget {
                         ),
                       ),
                     ),
+
                     InkWell(
                       onTap: () {
                         Navigator.push(
@@ -57,15 +66,18 @@ class MyCardsScreen extends StatelessWidget {
                         width: 42,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
-                          color: Color(0xffF4F4F4),
+                          color: const Color(0xffF4F4F4),
                         ),
                         child: Image.asset("assets/icons/add_icon.png"),
                       ),
                     ),
                   ],
                 ),
+
                 SizedBox(height: 40.9),
+
                 HomeCard(),
+
                 SizedBox(height: 35),
 
                 SizedBox(
@@ -80,7 +92,9 @@ class MyCardsScreen extends StatelessWidget {
                     },
                   ),
                 ),
+
                 SizedBox(height: 19),
+
                 Text(
                   "Monthly spending limit",
                   style: TextStyle(
@@ -89,17 +103,95 @@ class MyCardsScreen extends StatelessWidget {
                     color: Color(0xff1E1E2D),
                   ),
                 ),
+
                 SizedBox(height: 19),
 
-                Image.asset(
-                  "assets/images/image_card.png",
+                // Monthly Spending Limit Container
+                Container(
                   width: double.infinity,
-                  fit: BoxFit.contain,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 36,
+                    vertical: 32,
+                  ),
+                  decoration: BoxDecoration(
+                    color: const Color(0xffF5F5F5),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Amount: \$${spendingLimit.toStringAsFixed(2)}',
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xff292D32),
+                        ),
+                      ),
+
+                      const SizedBox(height: 18),
+
+                      SliderTheme(
+                        data: SliderTheme.of(context).copyWith(
+                          trackHeight: 10,
+                          activeTrackColor: const Color(0xff087EFF),
+                          inactiveTrackColor: Colors.white,
+                          thumbColor: Colors.white,
+                          thumbShape: const RoundSliderThumbShape(
+                            enabledThumbRadius: 10,
+                          ),
+                          overlayShape: const RoundSliderOverlayShape(
+                            overlayRadius: 0,
+                          ),
+                        ),
+                        child: Slider(
+                          value: spendingLimit,
+                          min: 0,
+                          max: 10000,
+                          onChanged: (value) {
+                            setState(() {
+                              spendingLimit = value;
+                            });
+                          },
+                        ),
+                      ),
+
+                      const SizedBox(height: 4),
+
+                      const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            '\$0',
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Color(0xffA3A3A3),
+                            ),
+                          ),
+                          Text(
+                            '\$4,600',
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Color(0xff292D32),
+                            ),
+                          ),
+                          Text(
+                            '\$10,000',
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Color(0xffA3A3A3),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
           ),
         ),
+
         Positioned(
           right: 0,
           top: 160,
@@ -124,7 +216,6 @@ class MyCardsScreen extends StatelessWidget {
       price: -12.99,
       colorPrice: Color(0xff1E1E2D),
     ),
-
     HomeOptionModel(
       iconImage: "assets/icons/Grocery.png",
       name: "Grocery",

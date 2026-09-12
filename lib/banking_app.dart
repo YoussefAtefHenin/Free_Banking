@@ -14,11 +14,12 @@ class BankingApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       // home:  اول اسكرين ,
-      // home: BottomNavBarScreen(),
+      home: BottomNavBarScreen(),
       // home: AddNewCardScreen(),
       // home: AllCardsScreen(),
-      home: OnboardingScreen(),
+      // home: OnboardingScreen(),
       // home: SendMoneyScreen(),
+      // home: OnboardingScreen(),
     );
   }
 }

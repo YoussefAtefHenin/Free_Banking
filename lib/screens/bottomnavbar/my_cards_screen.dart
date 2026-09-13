@@ -111,7 +111,7 @@ class _MyCardsScreenState extends State<MyCardsScreen> {
                   width: double.infinity,
                   padding: const EdgeInsets.symmetric(
                     horizontal: 36,
-                    vertical: 32,
+                    vertical: 20,
                   ),
                   decoration: BoxDecoration(
                     color: const Color(0xffF5F5F5),

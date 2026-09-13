@@ -17,7 +17,7 @@ class ProfilInfo extends StatelessWidget {
               shape: BoxShape.circle,
               image: DecorationImage(
                 fit: BoxFit.cover,
-                image: AssetImage("assets/images/profile.png"),
+                image: AssetImage("assets/images/profile2.png"),
               ),
             ),
           ),
@@ -33,10 +33,7 @@ class ProfilInfo extends StatelessWidget {
           const SizedBox(height: 4),
           const Text(
             "Senior Designer",
-            style: TextStyle(
-              color: Color(0xffA2A2A7),
-              fontSize: 14,
-            ),
+            style: TextStyle(color: Color(0xffA2A2A7), fontSize: 14),
           ),
         ],
       );
@@ -72,10 +69,7 @@ class ProfilInfo extends StatelessWidget {
               SizedBox(height: 4),
               Text(
                 "Senior Designer",
-                style: TextStyle(
-                  color: Color(0xff7E848D),
-                  fontSize: 14,
-                ),
+                style: TextStyle(color: Color(0xff7E848D), fontSize: 14),
               ),
             ],
           ),

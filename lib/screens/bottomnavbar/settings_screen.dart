@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../change_password_screen.dart';
+import '../language_screen.dart';
+import '../profile/profile_screen.dart';
+import '../terms_condition_screen.dart';
 import 'nav_bar_widget/opition_setting.dart';
 import 'nav_bar_widget/setting_appbar.dart';
 
@@ -33,20 +37,48 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   style: TextStyle(fontSize: 14, color: Color(0xffA2A2A7)),
                 ),
                 const SizedBox(height: 12),
-                SettingTile(title: 'Language', trailingText: 'English', onTap: () {}),
-                SettingTile(title: 'My Profile', onTap: () {}),
+                SettingTile(title: 'Language', trailingText: 'English', onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LanguageScreen(),
+                    ),
+                  );
+                }),
+                SettingTile(title: 'My Profile', onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ProfileScreen(),
+                    ),
+                  );
+                }),
                 SettingTile(title: 'Contact Us', onTap: () {}),
 
                 const SizedBox(height: 24),
 
-                // --- قسم Security ---
+
                 const Text(
                   "Security",
                   style: TextStyle(fontSize: 14, color: Color(0xffA2A2A7)),
                 ),
                 const SizedBox(height: 12),
-                SettingTile(title: 'Change Password', onTap: () {}),
-                SettingTile(title: 'Privacy Policy', onTap: () {}),
+                SettingTile(title: 'Change Password', onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>   ChangePasswordScreen(),
+                    ),
+                  );
+                }),
+                SettingTile(title: 'Privacy Policy', onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>   TermsConditionScreen(),
+                    ),
+                  );
+                }),
 
                 const SizedBox(height: 16),
                 const Text(

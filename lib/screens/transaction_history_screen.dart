@@ -10,20 +10,24 @@ class TransactionHistoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+
       appBar: CustomProfileAppBar(
         title: 'Transaction History',
         actionIcon: Icons.history,
       ),
+
       body: Padding(
         padding: const EdgeInsets.only(left: 20.0, right: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   "Today",
                   style: TextStyle(
                     color: Colors.black,
@@ -31,7 +35,8 @@ class TransactionHistoryScreen extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                Text(
+
+                const Text(
                   "See all",
                   style: TextStyle(
                     color: Color(0xff0066FF),
@@ -41,7 +46,9 @@ class TransactionHistoryScreen extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 30),
+
+            const SizedBox(height: 30),
+
             TransactionItemWidget(
               transactionModel: TransactionModel(
                 title: "Apple Store",
@@ -55,7 +62,9 @@ class TransactionHistoryScreen extends StatelessWidget {
                 isExpense: true,
               ),
             ),
-            SizedBox(height: 20),
+
+            const SizedBox(height: 20),
+
             TransactionItemWidget(
               transactionModel: TransactionModel(
                 title: "Spotify",
@@ -69,6 +78,7 @@ class TransactionHistoryScreen extends StatelessWidget {
                 isExpense: true,
               ),
             ),
+
             TransactionItemWidget(
               transactionModel: TransactionModel(
                 title: "Money Transfer",
@@ -82,7 +92,9 @@ class TransactionHistoryScreen extends StatelessWidget {
                 isExpense: false,
               ),
             ),
-            SizedBox(height: 20),
+
+            const SizedBox(height: 20),
+
             TransactionItemWidget(
               transactionModel: TransactionModel(
                 title: "Grocery",
@@ -96,7 +108,9 @@ class TransactionHistoryScreen extends StatelessWidget {
                 isExpense: true,
               ),
             ),
-            SizedBox(height: 20),
+
+            const SizedBox(height: 20),
+
             TransactionItemWidget(
               transactionModel: TransactionModel(
                 title: "Apple Store",
@@ -110,7 +124,9 @@ class TransactionHistoryScreen extends StatelessWidget {
                 isExpense: true,
               ),
             ),
-            SizedBox(height: 20),
+
+            const SizedBox(height: 20),
+
             TransactionItemWidget(
               transactionModel: TransactionModel(
                 title: "Spotify",
@@ -124,6 +140,7 @@ class TransactionHistoryScreen extends StatelessWidget {
                 isExpense: true,
               ),
             ),
+
             TransactionItemWidget(
               transactionModel: TransactionModel(
                 title: "Money Transfer",
@@ -137,7 +154,9 @@ class TransactionHistoryScreen extends StatelessWidget {
                 isExpense: false,
               ),
             ),
-            SizedBox(height: 20),
+
+            const SizedBox(height: 20),
+
             TransactionItemWidget(
               transactionModel: TransactionModel(
                 title: "Grocery",

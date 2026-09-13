@@ -4,6 +4,7 @@ import 'package:free_banking/screens/profile/profile_widget/customProfileAppBar.
 import 'package:free_banking/screens/profile/profile_widget/opition_profile.dart';
 import 'package:free_banking/screens/profile/profile_widget/profile_info.dart';
 
+import '../all_cards_screen.dart';
 import '../bottomnavbar/settings_screen.dart';
 import 'edit_profile_screen.dart';
 
@@ -55,7 +56,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
             OpitionProfile(
               text: 'Banks and Cards',
               icon: Icons.credit_card_outlined,
-              onTrailingTap: () {},
+              onTrailingTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AllCardsScreen(),
+                  ),
+                );
+              },
             ),
             OpitionProfile(
               text: 'Notifications',

@@ -4,8 +4,8 @@ import 'package:free_banking/screens/profile/profile_widget/customProfileAppBar.
 import 'package:free_banking/screens/profile/profile_widget/opition_profile.dart';
 import 'package:free_banking/screens/profile/profile_widget/profile_info.dart';
 
-import '../all_cards_screen.dart';
-import '../bottomnavbar/settings_screen.dart';
+import 'all_cards_screen.dart';
+import '../bottomnavbar/settings/settings_screen.dart';
 import 'edit_profile_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -20,14 +20,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: CustomProfileAppBar(title: 'Profile',actionIcon: Icons.person_add_alt,onActionTap: (){
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const EditProfileScreen(),
-          ),
-        );
-      },),
+      appBar: CustomProfileAppBar(
+        title: 'Profile',
+        actionIcon: Icons.person_add_alt,
+        onActionTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const EditProfileScreen()),
+          );
+        },
+      ),
       body: Padding(
         padding: const EdgeInsets.only(left: 20.0),
         child: Column(
@@ -37,8 +39,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             SizedBox(height: 30),
             OpitionProfile(
               text: 'Personal Information',
-              onTrailingTap: () {
-              },
+              onTrailingTap: () {},
               icon: Icons.account_circle_outlined,
             ),
             OpitionProfile(
@@ -59,9 +60,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               onTrailingTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => AllCardsScreen(),
-                  ),
+                  MaterialPageRoute(builder: (context) => AllCardsScreen()),
                 );
               },
             ),

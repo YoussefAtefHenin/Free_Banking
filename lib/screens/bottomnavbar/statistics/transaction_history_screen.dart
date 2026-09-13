@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:free_banking/screens/profile/profile_widget/customProfileAppBar.dart';
 import 'package:free_banking/screens/widget/transactionWidget/transactionItemWidget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../models/transactionItemModel.dart';
+import '../../../models/transactionItemModel.dart';
 
 class TransactionHistoryScreen extends StatelessWidget {
   const TransactionHistoryScreen({super.key});

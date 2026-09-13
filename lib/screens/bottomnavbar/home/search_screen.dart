@@ -5,7 +5,7 @@ import 'package:free_banking/screens/profile/profile_widget/customProfileAppBar.
 import 'package:free_banking/screens/widget/customSearchBar.dart';
 import 'package:free_banking/screens/widget/transactionWidget/transactionItemWidget.dart';
 
-import '../models/transactionItemModel.dart';
+import '../../../models/transactionItemModel.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});

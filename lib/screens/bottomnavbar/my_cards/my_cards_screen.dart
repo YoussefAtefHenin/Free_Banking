@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:free_banking/models/home_option_model.dart';
-import 'package:free_banking/screens/add_new_card_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/my_cards/add_new_card_screen.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_card.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_options.dart';
 

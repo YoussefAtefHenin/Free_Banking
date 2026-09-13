@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:free_banking/screens/bottomnavbar/home_screen.dart';
-import 'package:free_banking/screens/bottomnavbar/my_cards_screen.dart';
-import 'package:free_banking/screens/bottomnavbar/settings_screen.dart';
-import 'package:free_banking/screens/bottomnavbar/statistics_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/home/home_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/my_cards/my_cards_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/settings/settings_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/statistics/statistics_screen.dart';
 
 class BottomNavBarScreen extends StatefulWidget {
   const BottomNavBarScreen({super.key});

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:free_banking/models/home_option_model.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_card.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_options.dart';
-import 'package:free_banking/screens/request_money_screen.dart';
-import 'package:free_banking/screens/search_screen.dart';
-import 'package:free_banking/screens/send_money_screen.dart';
-import 'package:free_banking/screens/transaction_history_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/home/request_money_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/home/search_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/home/send_money_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/statistics/transaction_history_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});

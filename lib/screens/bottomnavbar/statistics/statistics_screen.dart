@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:free_banking/models/home_option_model.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_options.dart';
-import 'package:free_banking/screens/transaction_history_screen.dart';
+import 'package:free_banking/screens/bottomnavbar/statistics/transaction_history_screen.dart';
 
 class StatisticsScreen extends StatelessWidget {
   StatisticsScreen({super.key});

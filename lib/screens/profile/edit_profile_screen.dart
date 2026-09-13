@@ -109,8 +109,7 @@ class EditProfileScreen extends StatelessWidget {
               ),
               DateOfBirthField(
                 initialDate: DateTime(2000, 9, 28),
-                onDateSelected: (date) {
-                },
+                onDateSelected: (date) {},
               ),
               const SizedBox(height: 125),
               const Center(

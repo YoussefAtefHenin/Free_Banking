@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:free_banking/models/home_option_model.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_card.dart';
 import 'package:free_banking/screens/bottomnavbar/widget/home_options.dart';
+import 'package:free_banking/screens/request_money_screen.dart';
 import 'package:free_banking/screens/search_screen.dart';
 import 'package:free_banking/screens/send_money_screen.dart';
 import 'package:free_banking/screens/transaction_history_screen.dart';
@@ -120,14 +121,24 @@ class HomeScreen extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Container(
-                          height: 60,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: Color(0xffF4F4F4),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => RequestMoneyScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            height: 60,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              color: Color(0xffF4F4F4),
+                            ),
+                            child: Image.asset("assets/icons/receive_icon.png"),
                           ),
-                          child: Image.asset("assets/icons/receive_icon.png"),
                         ),
                         SizedBox(height: 3),
                         Text(

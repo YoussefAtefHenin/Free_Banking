@@ -8,7 +8,7 @@ class BankingApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:BottomNavBarScreen(),
+      home: BottomNavBarScreen(),
     );
   }
 }

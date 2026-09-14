@@ -1,4 +1,4 @@
-# BankPick 💳⚡
+<img width="1080" height="2400" alt="Screenshot_1789389277" src="https://github.com/user-attachments/assets/1fb9d102-20a2-48e9-8ac6-1e268677819e" /># BankPick 💳⚡
 
 > **The Next-Gen Smart Digital Banking & E-Wallet Ecosystem**
 
@@ -46,12 +46,17 @@
 
 ### 4. Card & Asset Management (`My-...`, `Add...`, `Edit...`)
 
-* **Wallet Management Hub (`My-...`):** A centralized vault view where users can toggle active cards, freeze/unfreeze assets instantly, and check card-specific limits.
-* **Card Provisioning & Customization (`Add...`, `Edit...`):** Streamlined forms allowing users to link new plastic or virtual cards, update billing addresses, and modify security pins or friendly card labels.
+* **Wallet Management Hub (<img width="1080" height="2400" alt="Screenshot_1789389272" src="https://github.com/user-attachments/assets/381b9d8f-d31c-42a3-9e9c-d9db8bc7c790" />
+):** A centralized vault view where users can toggle active cards, freeze/unfreeze assets instantly, and check card-specific limits.
+* **Card Provisioning & Customization (<img width="1080" height="2400" alt="Screenshot_1789389277" src="https://github.com/user-attachments/assets/8052d0ad-d38a-45e6-8399-2e5a96458726" />
+
+, <img width="1080" height="2400" alt="Screenshot_1789389356" src="https://github.com/user-attachments/assets/48f90699-eac9-404d-8069-76342c3a3e26" />
+):** Streamlined forms allowing users to link new plastic or virtual cards, update billing addresses, and modify security pins or friendly card labels.
 
 ### 5. Peer-to-Peer Payments (`Send...`, `Request...`)
 
-* **Frictionless Transfer Engine (`Send...`):** Multi-step transfer wizard enabling users to pick beneficiaries, enter custom amounts with multi-currency support, and authorize transfers using biometric or pin validation.
+* **Frictionless Transfer Engine (
+):** Multi-step transfer wizard enabling users to pick beneficiaries, enter custom amounts with multi-currency support, and authorize transfers using biometric or pin validation.
 * **Bill & Fund Request Utility (`Request...`):** Allows users to generate payment links or direct requests to other peers with pre-filled amounts and customizable notes.
 
 ### 6. Localization, Security & System Preferences (`Lang...`, `Chan...`, `Term...`, `Profile`, `Edit...`)

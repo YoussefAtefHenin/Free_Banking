@@ -1,3 +1,4 @@
+<img width="1080" height="2400" alt="Screenshot_1789389222" src="https://github.com/user-attachments/assets/d1f31de3-c0cd-44cf-a88a-4ffc92968c85" />
 <img width="1080" height="2400" alt="Screenshot_1789389277" src="https://github.com/user-attachments/assets/1fb9d102-20a2-48e9-8ac6-1e268677819e" /># BankPick 💳⚡
 
 > **The Next-Gen Smart Digital Banking & E-Wallet Ecosystem**
@@ -55,16 +56,24 @@
 
 ### 5. Peer-to-Peer Payments (`Send...`, `Request...`)
 
-* **Frictionless Transfer Engine (
+* **Frictionless Transfer Engine (<img width="1080" height="2400" alt="Screenshot_1789389222" src="https://github.com/user-attachments/assets/e73f3e89-6b1d-47ec-b824-ada6dcc89132" />
+
+
 ):** Multi-step transfer wizard enabling users to pick beneficiaries, enter custom amounts with multi-currency support, and authorize transfers using biometric or pin validation.
-* **Bill & Fund Request Utility (`Request...`):** Allows users to generate payment links or direct requests to other peers with pre-filled amounts and customizable notes.
+* **Bill & Fund Request Utility (<img width="1080" height="2400" alt="Screenshot_1789389230" src="https://github.com/user-attachments/assets/89964a07-7035-498e-8d0d-6f706cf2028f" />
+):** Allows users to generate payment links or direct requests to other peers with pre-filled amounts and customizable notes.
 
 ### 6. Localization, Security & System Preferences (`Lang...`, `Chan...`, `Term...`, `Profile`, `Edit...`)
 
-* **Global Localization Engine (`Lang...`):** Dynamic language switching supporting RTL (Right-to-Left) and LTR layouts seamlessly.
-* **Security & Credentials (`Chan...`):** Dedicated workflows for updating passwords, enabling two-factor authentication (2FA), and managing biometric login tokens.
-* **Legal & Compliance (`Term...`):** In-app documentation viewers outlining Terms of Service, privacy guarantees, and data protection compliance policies.
-* **User Profile Suite (`Profile`, `Edit...`):** Central hub for managing personal identification details, profile pictures, contact numbers, and notification preferences.
+* **Global Localization Engine (<img width="1080" height="2400" alt="Screenshot_1789389309" src="https://github.com/user-attachments/assets/e008b9d7-f875-4aeb-9786-4e64ca30eb36" />
+):** Dynamic language switching supporting RTL (Right-to-Left) and LTR layouts seamlessly.
+* **Security & Credentials (<img width="1080" height="2400" alt="Screenshot_1789389317" src="https://github.com/user-attachments/assets/d40a3bd2-8c10-432d-ae2f-1538f6a1bcdf" />
+):** Dedicated workflows for updating passwords, enabling two-factor authentication (2FA), and managing biometric login tokens.
+* **Legal & Compliance (<img width="1080" height="2400" alt="Screenshot_1789389325" src="https://github.com/user-attachments/assets/45cb5fd5-0310-4dc2-bdea-b7497d6a7e3b" />
+):** In-app documentation viewers outlining Terms of Service, privacy guarantees, and data protection compliance policies.
+* **User Profile Suite (<img width="1080" height="2400" alt="Screenshot_1789389332" src="https://github.com/user-attachments/assets/c0920e35-143a-417f-9bd1-4f42be1e8eb9" />
+  <img width="1080" height="2400" alt="Screenshot_1789389337" src="https://github.com/user-attachments/assets/b770f3bf-3ea6-4e7e-af36-8dfa5a55d7ee" />
+):** Central hub for managing personal identification details, profile pictures, contact numbers, and notification preferences.
 
 ---
 
